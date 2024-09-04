@@ -7,8 +7,8 @@ METHOD=POST
 HEADERS {type:accept
         value:application/json} 
 Body: JSON format {
-    "username":"Nirupama12",
-    "email": "singhnirupama9651@gmail.com",
+    "username":"Nrupama12",
+    "email": "signirupama9651@gmail.com",
     "password": "password123",
     "password_confirmation": "password123",
     "phone_number": "1230567890",
@@ -22,7 +22,7 @@ METHOD=POST
 HEADERS {type:accept
         value:application/json} 
 Body: JSON format >>{
-  "email": "raj189978@gmail.com",
+  "email": "raj9978@gmail.com",
   "password": "password123"
 }
 Response: {
