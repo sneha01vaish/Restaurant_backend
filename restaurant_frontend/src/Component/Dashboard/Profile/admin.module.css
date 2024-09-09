@@ -1,0 +1,91 @@
+/* Container for the profile form */
+.profileContainer {
+    width: 70%; /* Adjust as per your design */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: #f7f7f7; /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Styling for form elements */
+  .profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form inputs */
+  }
+  
+  /* Labels */
+  .profileForm label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Inputs and Textarea */
+  .profileForm input, .profileForm textarea, .profileForm select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  .profileForm input:focus, .profileForm textarea:focus, .profileForm select:focus {
+    border-color: teal;
+    outline: none;
+  }
+  
+  /* Textarea styling */
+  .profileForm textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 15px;
+    background-color: teal;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #004d4d;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Success message */
+  .success {
+    color: green;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .profileContainer {
+      width: 90%;
+    }
+    
+    .profileForm input, .profileForm textarea, .profileForm select {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  

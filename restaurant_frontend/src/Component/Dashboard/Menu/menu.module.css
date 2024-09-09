@@ -1,0 +1,57 @@
+.menuContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addCategoryContainer,
+.addTableContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.addButton {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.addItemContainer,
+.addTableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menuImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.tableList {
+  list-style: none;
+  padding: 0;
+}
+
+.tableItem {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
