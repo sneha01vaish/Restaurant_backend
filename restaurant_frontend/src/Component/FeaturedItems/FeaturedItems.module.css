@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.featuredcontainer {
+  padding: 10px;
+  text-align: center;
+  width: 83%;
+}
+
+.featuredcontainer h2 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #5CC3FD;
+}
+
+.restaurantgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.restaurantcard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+.restaurantcard img{
+  transition: transform 0.2s;
+}
+
+.restaurantcard img:hover {
+  transform: scale(1.05);
+}
+
+.imagewrapper {
+  position: relative;
+  height: 150px;
+}
+
+.imagewrapper img {
+  width: 100%;
+  height: 100%;
+}
+.contain{
+  display: flex;
+  /* height: 100px; */
+  width: 100%;
+}
+.logo>img{
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.discountbadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4747;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+}
+
+.fastbadge {
+  position: absolute;
+  top: 10px;
+  right: 25%;
+  background-color: #ffbe0b;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 5px;
+  font-size: 12px;display: flex;
+
+}
+.icon{
+  width: 15px;
+  top: 10px;
+  margin-right: 10px;
+}
+.icons{
+  font-size: 30px;
+}
+.restaurantcard h3 {
+  padding: 10px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.restaurantrating {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.statusbadge {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.opennow {
+  background-color: rgb(210, 254, 192);
+  color: rgb(7, 202, 7);
+  font-weight: 800;
+  width: 80px;
+}
+
+.openstomorrow {
+  background-color: #ffe6c3;
+  color: orangered;
+  font-weight: 800;
+  width: 120px;
+}
+
+
+.viewallbtn {
+  background-color: #ffbe0b;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.viewallbtn:hover {
+  background-color: #e0a800;
+}
