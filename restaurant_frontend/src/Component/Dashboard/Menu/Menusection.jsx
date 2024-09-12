@@ -131,9 +131,10 @@ const MenuSection = () => {
   };
 
   return (
+
     <div className={style.menuContainer}>
-      <h2>Menu and Tables</h2>
-      {isOwner && (
+      {/* <h2>Menu and Tables</h2> */}
+      {/* {isOwner && (
         <div className={style.addCategoryContainer}>
           <input
             type="text"
@@ -143,12 +144,12 @@ const MenuSection = () => {
           />
           <button onClick={handleAddCategory} className={style.addButton}>Add Category</button>
         </div>
-      )}
+      )} */}
 
       {categories.map((category) => (
         <div key={category._id} className={style.category}>
-          <h3>{category.category_name}</h3>
-          {isOwner && (
+          {/* <h3>{category.category_name}</h3> */}
+          {/* {isOwner && (
             <div className={style.addItemContainer}>
               <input
                 type="text"
@@ -171,40 +172,83 @@ const MenuSection = () => {
               ></textarea>
               <button onClick={() => handleAddItem(category._id)}>Add Item</button>
             </div>
-          )}
+          )} */}
 
           <ul className={style.itemList}>
-            {category.items.map((item) => (
-              <li key={item._id} className={style.menuItem}>
-                <img src={item.image_url} alt={item.item_name} className={style.menuImage} />
-                <p>{item.item_name}</p>
-                <p>{item.price}</p>
-                {isOwner && (
-                  <div className={style.actionButtons}>
-                    <button onClick={() => handleDeleteItem(item._id, category._id)}>Delete</button>
-                  </div>
-                )}
-              </li>
-            ))}
+            {
+              {/* category.items.map((item) => (
+                <li key={item._id} className={style.menuItem}>
+                  <img src={item.image_url} alt={item.item_name} className={style.menuImage} />
+                  <p>{item.item_name}</p>
+                  <p>{item.price}</p>
+                  {isOwner && (
+                    <div className={style.actionButtons}>
+                      <button onClick={() => handleDeleteItem(item._id, category._id)}>Delete</button>
+                    </div>
+                  )}
+                </li>
+              )) */}
+            }
           </ul>
         </div>
       ))}
 
-      <h2>Table Management</h2>
-      <div className={style.addTableContainer}>
-        <input
+      <h2>Create Menu</h2>
+      <div className='d-flex gap-5'>
+        <div className={style.addTableContainer}>
+        <h2>Category</h2>
+          <div class="mb-2">
+            <label for="category_name" class="form-label">Category Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Category Name" />
+          </div>
+          
+          <button onClick={handleAddTable} className={style.addButton}>Add Category</button>
+        </div>
+
+        <div className={style.addTableContainer}>
+        <h2>Item</h2>
+          <div class="mb-2">
+            <label for="item_name" class="form-label">Item Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Item Name" />
+          </div>
+          {/* <input
           type="text"
           placeholder="Table Number"
           value={newTable.table_number}
           onChange={(e) => setNewTable({ ...newTable, table_number: e.target.value })}
-        />
-        <input
+        /> */}
+          <div class="mb-2">
+            <label for="description" class="form-label">Item Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          {/* <input
           type="text"
           placeholder="Capacity"
           value={newTable.capacity}
           onChange={(e) => setNewTable({ ...newTable, capacity: e.target.value })}
-        />
-        <button onClick={handleAddTable} className={style.addButton}>Add Table</button>
+        /> */}
+          <div class="mb-2">
+            <label for="item_price" class="form-label">Price</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Price" />
+          </div>
+          {/* <input
+          type="text"
+          placeholder="Capacity"
+          value={newTable.capacity}
+          onChange={(e) => setNewTable({ ...newTable, capacity: e.target.value })}
+        /> */}
+          <div class="mb-2">
+            <label for="image" class="form-label">Image</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder='Image_Url' />
+          </div>
+          {/* <input
+          type="text"
+          placeholder="Capacity"
+          value={newTable.capacity}
+          onChange={(e) => setNewTable({ ...newTable, capacity: e.target.value })}
+        /> */}
+          <button onClick={handleAddTable} className={style.addButton}>Add Item</button>
+        </div>
       </div>
 
       <ul className={style.tableList}>

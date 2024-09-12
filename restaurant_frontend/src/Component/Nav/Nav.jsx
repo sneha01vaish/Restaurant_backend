@@ -17,7 +17,7 @@ const Nav = () => {
         </button>
         <div className="collapse navbar-collapse bg-white border-lg-0 my-2 mt-lg-0 d-flex justify-content-between" id="navbarSupportedContent">
             <div className="pt-lg-0 d-block d-lg-none d-xl-block">
-                <p className="mb-0 fw-bold text-lg-center">Deliver to: <i className="fas fa-map-marker-alt text-warning mx-2"></i><span className="fw-normal">Current Location </span><span>Mirpur 1 Bus Stand, Dhaka</span></p>
+                <p className="mb-0 fw-bold text-lg-center">Deliver to: <i className="fas fa-map-marker-alt text-warning mx-2"></i><span className="fw-normal">Bhubaneswar</span></p>
             </div>
             <form className="d-flex mt-4 mt-lg-0 ms-lg-auto ms-xl-0">
                 <div className={style.inputGroupIcon}>

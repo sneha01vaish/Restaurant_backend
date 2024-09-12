@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './Component/Home/Home'
 import Signin from './Component/Signin/Signin'
 import Signup from './Component/Signup/Signup'
@@ -20,26 +20,25 @@ import OrderSection from './Component/Dashboard/Order/OrderSection'
 const App = () => {
   return (
     <div>
-        <BrowserRouter>
-        {/* <Nav/> */}
-        <Routes>
-              <Route path='/'element={<Home/>}/>
-              <Route path='/signin' element={<Signin/>}/>
-              <Route path='/signup' element={<Signup/>}/>
-              <Route path='/aboutus' element={<Aboutus/>}/>
-              <Route path='/contactus' element={<Contactus/>}/>
-              <Route path='/ourpartner' element={<Ourpartner/>}/>
-              <Route path='/portfolio' element={<Portfolio/>}/>
-              <Route path='/dashboard' element={<Dashboard/>}/>
-              <Route path='/profile' element={<Adminprofile/>}/>
-              <Route path="/verify-email" element={<VerifyEmail/>} />
-              <Route path='/menu' element={<MenuSection/>}/>
-              {/* <Route path='/new' element={<New/>}/> */}
-              <Route path='/employee' element={<EmployeeSection/>}/>
-              <Route path='/order' element={<OrderSection/>}/>
-        </Routes>
-        {/* <Footer/> */}
-        </BrowserRouter>
+      {/* <Nav/> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/signin' element={<Signin />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/aboutus' element={<Aboutus />} />
+        <Route path='/contactus' element={<Contactus />} />
+        <Route path='/ourpartner' element={<Ourpartner />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/dashboard' element={<Dashboard />} >
+          <Route path='menu' element={<MenuSection />} />
+          {/* <Route path='/new' element={<New/>}/> */}
+          <Route path='employee' element={<EmployeeSection />} />
+          <Route path='order' element={<OrderSection />} />
+        </Route>
+          <Route path='profile' element={<Adminprofile />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
+
+      </Routes>
     </div>
   )
 }
