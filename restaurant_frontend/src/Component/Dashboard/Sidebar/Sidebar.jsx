@@ -48,7 +48,7 @@ function Sidebar() {
         </button>
         <ul className="dropdown-menu">
           <li><Link className="dropdown-item" to="menu">Create menu</Link></li>
-          <li><Link className="dropdown-item" to="#">All Menu</Link></li>
+          <li><Link className="dropdown-item" to="menu_list">All Menu</Link></li>
         </ul>
       </div>
 

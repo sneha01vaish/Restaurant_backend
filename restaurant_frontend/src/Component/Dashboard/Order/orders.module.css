@@ -36,4 +36,16 @@
   button:hover {
     background-color: #2980b9;
   }
+
+  .OrderWrapper{
+    width: 80vw;
+    height: 100vh;
+    padding: 10px 20px;
+  }
+  .OrderWrapper table{
+    vertical-align: middle !important;
+  }
+  .OrderWrapper table button{
+    margin-top: 0 !important;
+  }
   

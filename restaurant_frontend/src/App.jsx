@@ -12,7 +12,8 @@ import Footer from './Component/Footer/Footer'
 import Dashboard from './Component/Dashboard/Dashboard'
 import Adminprofile from './Component/Dashboard/Profile/Adminprofile'
 import VerifyEmail from './Component/VerifyEmail/VerifyEmail'
-import MenuSection from './Component/Dashboard/Menu/Menusection'
+import CreateMenu from './Component/Dashboard/Menu/CreateMenu';
+import MenuList from './Component/Dashboard/MenuList/MenuList'
 import EmployeeSection from './Component/Dashboard/Employee/EmployeeSection'
 import OrderSection from './Component/Dashboard/Order/OrderSection'
 
@@ -30,7 +31,8 @@ const App = () => {
         <Route path='/ourpartner' element={<Ourpartner />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/dashboard' element={<Dashboard />} >
-          <Route path='menu' element={<MenuSection />} />
+          <Route path='menu' element={<CreateMenu />} />
+          <Route path='menu_list' element={<MenuList />} />
           {/* <Route path='/new' element={<New/>}/> */}
           <Route path='employee' element={<EmployeeSection />} />
           <Route path='order' element={<OrderSection />} />

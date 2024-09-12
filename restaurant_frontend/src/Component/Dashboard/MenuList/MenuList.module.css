@@ -1,0 +1,10 @@
+.tableWrapper{
+  width: 80vw;
+  height: 100vh;
+  padding: 10px 20px;
+}
+.tableWrapper table{
+  vertical-align: middle !important;
+  width: 100%;
+  height:fit-content;
+}
